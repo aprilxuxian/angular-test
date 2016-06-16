@@ -1,0 +1,60 @@
+﻿<div class="row">
+    <h2>{{title}}</h2>
+    <form ng-submit="submit()" ng-controller="AddFlightController">
+        <div class="row">
+            <div class="col-xs-3 col-sm-6 col-md-2">
+                <span>Flight Number</span>
+            </div>
+            <div class="col-xs-9 col-sm-6 col-md-2 form-group">
+                <input class="form-control" type="text" ng-model="FlightNumber" required />
+            </div>
+        </div>
+       
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="row form-group">
+                        <div class="col-xs-3 col-sm-2 col-md-4">
+                            <span>Arrival</span>
+                        </div>
+                        <div class="col-xs-4 col-sm-5 col-md-4">
+                            <select ng-model="selectedArrivalHour" class="form-control" required>
+                                <option value="">Please select hour</option>
+                                <option ng-repeat="x in hours" value="{{x}}">{{x}}</option>
+                            </select>:
+                        </div>
+                        <div class="col-xs-5 col-sm-5 col-md-4">
+                            <select ng-model="selectedArrivalMin" class="form-control" required>
+                                <option value="">Please select min</option>
+                                <option ng-repeat="x in mins" value="{{x}}">{{x}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6  col-md-6">
+                    <div class="form-group">
+                        <div class="col-xs-3 col-sm-2  col-md-4">
+                            <span>Departure</span>
+                        </div>
+                        <div class="col-xs-4 col-sm-5 col-md-4">
+                            <select ng-model="selectedDepartureHour" class="form-control" required>
+                                <option value="">Please select hour</option>
+                                <option ng-repeat="x in hours" value="{{x}}">{{x}}</option>
+                            </select>:
+                        </div>
+                        <div class="col-xs-5 col-sm-5 col-md-4">
+                            <select ng-model="selectedDepartureMin" class="form-control" required>
+                                <option value="">Please select min</option>
+                                <option ng-repeat="x in mins" value="{{x}}">{{x}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="submit" class="btn btn-primary" id='addFlight' value="submit" />
+                </div>
+            </div>
+</form>
+</div>
+

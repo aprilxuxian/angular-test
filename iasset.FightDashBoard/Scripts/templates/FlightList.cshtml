@@ -1,0 +1,45 @@
+﻿<div class="row">
+    <div class="col-md-9">
+        <h2>{{models.title}}</h2>
+        <div class="row">
+            <div class="col-xs-3 col-sm-2  col-md-3">
+                <span>Please select a gate</span>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-4 form-group">
+                <select class="form-control" ng-model="selectedGate" ng-change="selectGate(selectedGate);">
+                    <option ng-repeat="x in models.gates" value="{{x.GateNumber}}">{{x.GateNumber}}</option>
+                </select>
+            </div>
+        </div>
+        <div ng-repeat="gate in models.gatequeryresult">
+            <span>Gate:{{gate.GateNumber}}</span> <a href="#AddNewFlight/{{gate.GateNumber}}">Add New Flight</a>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Flight</th>
+                        <th>Arrival</th>
+                        <th>Departure</th>
+                        <th>Status</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr ng-repeat="flight in gate.Flights" class="form-group">
+                        <td>{{flight.FlightNumber}}</td>
+                        <td> {{flight.ArrivalTime}}</td>
+                        <td> {{flight.DepartureTime}}</td>
+                        <td> {{flight.FlightStatus}}</td>
+                        <td><a href="#UpdateFlight/{{gate.GateNumber}}/{{flight.FlightNumber}}">Update</a></td>
+                        <td><input class="btn btn-warning" type="button" ng-disabled="flight.FlightStatus == 'Cancelled'" ng-click="cancelFlight(gate.GateNumber, flight.FlightNumber)" value="Cancel this Flight" /></td>
+                        <td>
+                            <select class="form-control" ng-change="selectChangeGate(selectedChangeGate);" ng-model="selectedChangeGate">
+                                <option ng-repeat="x in models.gates | filter: {GateNumber: '!'+ gate.GateNumber}" value="{{x.GateNumber}}">{{x.GateNumber}}</option>
+                            </select>
+                            <input class="btn btn-default" type="button" ng-click="changeGate(gate.GateNumber, flight.FlightNumber)" value="Assign to other gate" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

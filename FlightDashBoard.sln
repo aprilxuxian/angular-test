@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasset.FlightDashBoard", "iasset.FightDashBoard\iasset.FlightDashBoard.csproj", "{C4AB92C0-3BE7-4D91-B5E6-1D4BE7CDF3D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasset.FlightDashBoard.Domain", "iasset.FlightDashBoard.Domain\iasset.FlightDashBoard.Domain.csproj", "{776361E9-667E-4E9F-8080-79C9C4183CB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasset.FlightDashBoard.Services", "iasset.FlightDashBoard.Services\iasset.FlightDashBoard.Services.csproj", "{571FD524-5E4A-4F55-A5D2-F40C5341C4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasset.FlightDashBoard.Test", "iasset.FlightDashBoard.Test\iasset.FlightDashBoard.Test.csproj", "{C9DDFBE2-8B31-4D1B-9389-F82F8A7F1104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasset.FlightDashBoard.Repository", "iasset.FlightDashBoard.Repository\iasset.FlightDashBoard.Repository.csproj", "{C6C6E87D-4C2A-4E25-A114-ADB7C98DF7FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4AB92C0-3BE7-4D91-B5E6-1D4BE7CDF3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AB92C0-3BE7-4D91-B5E6-1D4BE7CDF3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AB92C0-3BE7-4D91-B5E6-1D4BE7CDF3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AB92C0-3BE7-4D91-B5E6-1D4BE7CDF3D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776361E9-667E-4E9F-8080-79C9C4183CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776361E9-667E-4E9F-8080-79C9C4183CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776361E9-667E-4E9F-8080-79C9C4183CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776361E9-667E-4E9F-8080-79C9C4183CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571FD524-5E4A-4F55-A5D2-F40C5341C4A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571FD524-5E4A-4F55-A5D2-F40C5341C4A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571FD524-5E4A-4F55-A5D2-F40C5341C4A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571FD524-5E4A-4F55-A5D2-F40C5341C4A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DDFBE2-8B31-4D1B-9389-F82F8A7F1104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DDFBE2-8B31-4D1B-9389-F82F8A7F1104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DDFBE2-8B31-4D1B-9389-F82F8A7F1104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DDFBE2-8B31-4D1B-9389-F82F8A7F1104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C6E87D-4C2A-4E25-A114-ADB7C98DF7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C6E87D-4C2A-4E25-A114-ADB7C98DF7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C6E87D-4C2A-4E25-A114-ADB7C98DF7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C6E87D-4C2A-4E25-A114-ADB7C98DF7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
